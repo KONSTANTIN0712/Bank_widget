@@ -7,12 +7,11 @@ def get_mask_card_number(cart_number: str) -> str:
 
 
 if __name__ == "__main__":
-    print(get_mask_card_number(7000792289606361))
+    print(get_mask_card_number("7000792289606361"))
 
 
 def get_mask_account(account_number: str) -> str:
     """Функция принимает на вход номер счета в виде числа и возвращает маску номера по правилу **XXXX."""
-
 
     account_number = str(account_number)
     mask_account = f"**{account_number[-4:]}"
