@@ -2,7 +2,7 @@ def get_mask_card_number(cart_number: str) -> str:
     """Функция принимает на вход номер карты и возвращает ее маску.
     Номер карты замаскирован и отображается в формате XXXX XX** **** XXXX"""
     cart_number = str(cart_number)
-    mask_number = f"{cart_number[:4]}  {cart_number[4:6]}** **** {cart_number[12:]}"
+    mask_number = f"{cart_number[:-12]}  {cart_number[-6:-4]}** **** {cart_number[-4:]}"
     return mask_number
 
 
