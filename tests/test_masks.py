@@ -21,9 +21,9 @@ def test_get_mask_card_number_empty_line(card_number_empty_line):
 
 def test_get_mask_account_space(number_account) -> None:
     """Тесты для функции маскировки номера счета (работа кода с пробелами)"""
-    assert get_mask_account("736541084301 3587430") == number_account
-    assert get_mask_account("7365410 843013587430") == number_account
-    assert get_mask_account("7365 410843013587430") == number_account
+    assert get_mask_account("736541084301 35874301") == number_account
+    assert get_mask_account("7365410 8430135874301") == number_account
+    assert get_mask_account("7365 4108430135874301") == number_account
 
 
 def test_get_number_account_len(number_account_len) -> None:
