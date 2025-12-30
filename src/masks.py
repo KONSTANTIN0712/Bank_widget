@@ -29,8 +29,9 @@ def get_mask_account(cart_number: str) -> str:
         if len(cart_number_no_spaces) == 20:
             mask_account = f"**{cart_number_no_spaces[-4:]}"
             return mask_account
-        return "Номер счета должен содержать 20 цифр"
+        else:
+            return "Номер счета должен содержать 20 цифр"
 
 
 if __name__ == "__main__":
-    print(get_mask_account("Счет 73654108430135874301"))
+    print(get_mask_account("73654108430135874301"))

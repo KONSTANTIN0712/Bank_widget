@@ -12,6 +12,7 @@ def test_mask_account_card_len() -> None:
     assert mask_account_card("MasterCard 7000792289606361321") == "Номер карты должен содержать 16 цифр"
     assert mask_account_card("Счет 73654108430135874305123") == "Номер счета должен содержать 20 цифр"
 
+
 def test_mask_account_empty_line() -> None:
     """Тест корректности работы при пустой строке"""
     assert mask_account_card("") == "Строка не может быть пустой"
