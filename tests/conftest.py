@@ -16,7 +16,7 @@ def account_number_empty_line():
 
 @pytest.fixture()
 def date_str():
-    return ["2024-03-11T02:26:18.671407", "2023-03-11T02:26:18.671407"]
+    return "2024-03-11T02:26:18.671407"
 
 @pytest.fixture()
 def date_str_empty_line():
